@@ -61,43 +61,26 @@ constexpr uint64_t kDefaultUploadIntervalSeconds = 60;  // 1 minute.
 // updating on the fly.
 constexpr const char* kCollectedHistograms[] = {
     "Brave.Core.BookmarksCountOnProfileLoad.2",
-    "Brave.Core.CrashReportsEnabled",
-    "Brave.Core.IsDefault",
-    "Brave.Core.LastTimeIncognitoUsed",
-    "Brave.Core.NumberOfExtensions",
-    "Brave.Core.TabCount",
-    "Brave.Core.TorEverUsed",
-    "Brave.Core.WindowCount.2",
-    "Brave.Importer.ImporterSource",
-    "Brave.NTP.CustomizeUsageStatus",
-    "Brave.NTP.NewTabsCreated",
-    "Brave.NTP.SponsoredImagesEnabled",
-    "Brave.NTP.SponsoredNewTabsCreated",
-    "Brave.Omnibox.SearchCount",
-    "Brave.P3A.SentAnswersCount",
-    "Brave.Rewards.AdsState.2",
-    "Brave.Rewards.AutoContributionsState.2",
-    "Brave.Rewards.TipsState.2",
-    "Brave.Rewards.WalletBalance.2",
-    "Brave.Savings.BandwidthSavingsMB",
-    "Brave.Search.DefaultEngine.4",
-    "Brave.Shields.UsageStatus",
-    "Brave.SpeedReader.Enabled",
-    "Brave.SpeedReader.ToggleCount",
-    "Brave.Today.HasEverInteracted",
-    "Brave.Today.WeeklySessionCount",
+    "Brave.Core.CrashReportsEnabled", "Brave.Core.IsDefault",
+    "Brave.Core.LastTimeIncognitoUsed", "Brave.Core.NumberOfExtensions",
+    "Brave.Core.TabCount", "Brave.Core.TorEverUsed", "Brave.Core.WindowCount.2",
+    "Brave.Importer.ImporterSource", "Brave.NTP.CustomizeUsageStatus",
+    "Brave.NTP.NewTabsCreated", "Brave.NTP.SponsoredImagesEnabled",
+    "Brave.NTP.SponsoredNewTabsCreated", "Brave.Omnibox.SearchCount",
+    "Brave.P3A.SentAnswersCount", "Brave.Rewards.AdsState.2",
+    "Brave.Rewards.AutoContributionsState.2", "Brave.Rewards.TipsState.2",
+    "Brave.Rewards.WalletBalance.2", "Brave.Savings.BandwidthSavingsMB",
+    "Brave.Search.DefaultEngine.4", "Brave.Shields.UsageStatus",
+    "Brave.SpeedReader.Enabled", "Brave.SpeedReader.ToggleCount",
+    "Brave.Today.HasEverInteracted", "Brave.Today.WeeklySessionCount",
     "Brave.Today.WeeklyMaxCardViewsCount",
-    "Brave.Today.WeeklyMaxCardVisitsCount",
-    "Brave.Sync.Status",
-    "Brave.Sync.TypesEverReenabled",
-    "Brave.Uptime.BrowserOpenMinutes",
+    "Brave.Today.WeeklyMaxCardVisitsCount", "Brave.Sync.Status",
+    "Brave.Sync.TypesEverReenabled", "Brave.Uptime.BrowserOpenMinutes",
     "Brave.Welcome.InteractionStatus",
 
     // IPFS
-    "Brave.IPFS.IPFSCompanionInstalled",
-    "Brave.IPFS.DetectionPromptCount",
-    "Brave.IPFS.GatewaySetting",
-    "Brave.IPFS.DaemonRunTime",
+    "Brave.IPFS.IPFSCompanionInstalled", "Brave.IPFS.DetectionPromptCount",
+    "Brave.IPFS.GatewaySetting", "Brave.IPFS.DaemonRunTime",
 
     // P2A
     // Ad Opportunities
@@ -161,8 +144,7 @@ constexpr const char* kCollectedHistograms[] = {
     "Brave.P2A.AdImpressionsPerSegment.technologycomputing",
     "Brave.P2A.AdImpressionsPerSegment.travel",
     "Brave.P2A.AdImpressionsPerSegment.weather",
-    "Brave.P2A.AdImpressionsPerSegment.untargeted"
-};
+    "Brave.P2A.AdImpressionsPerSegment.untargeted"};
 
 bool IsSuspendedMetric(base::StringPiece metric_name,
                        uint64_t value_or_bucket) {
